@@ -12,4 +12,8 @@ public class Main {
     public static boolean validateDigits(String input) {
         return input.matches(".*\\d.*");
     }
+
+    public static boolean validateCapitals(String input) {
+        return !input.equals(input.toLowerCase());
+    }
 }

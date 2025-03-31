@@ -78,4 +78,14 @@ class MainTest {
         // THEN
         assertFalse(actual);
     }
+
+    @Test
+    void validateSpecialChar_shouldReturnTrue_WhenInputHasNone() {
+        // GIVEN
+        String usual = "Password123";
+        // WHEN
+        boolean actual = Main.validateSpecialChar(usual);
+        // THEN
+        assertTrue(actual);
+    }
 }

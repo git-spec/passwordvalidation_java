@@ -6,7 +6,20 @@ public class Main {
     static String[] usuals = {"1234qwer", "12345678", "password", "password1", "qwerty123", "1q2w3e4r"};
 
     public static void main(String[] args) {
-        System.out.println(Main.validateOriginality("Hello World!"));
+        System.out.println(Main.validatePassword("Hello2World!"));
+    }
+
+    /**
+     * Validates the quality of an entry for a password.
+     * @param password  input for a password
+     * @return  true if all requirements are fulfilled
+     */
+    public static boolean validatePassword(String password) {
+        return validateLength(password)
+                && validateDigits(password)
+                && validateCapitals(password)
+                && validateOriginality(password)
+                && !validateSpecialChars(password);
     }
 
     /**

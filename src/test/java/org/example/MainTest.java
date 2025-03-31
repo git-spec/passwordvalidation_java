@@ -17,7 +17,7 @@ class MainTest {
     }
 
     @Test
-    void validateLength_shouldReturnFalse_WhenInputIsStringLength8() {
+    void validateLength_shouldReturnTrue_WhenInputIsStringLength8() {
         // GIVEN
         String input = "abc1234%";
         // WHEN

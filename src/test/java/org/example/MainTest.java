@@ -37,9 +37,9 @@ class MainTest {
     }
 
     @Test
-    void validateDigits_shouldReturnTrue_WhenInputEndsWithDigit() {
+    void validateDigits_shouldReturnTrue_WhenInputEndsWithDigits() {
         // GIVEN
-        String input = "abc123%4";
+        String input = "abc12%34";
         // WHEN
         boolean actual = Main.validateDigits(input);
         // THEN

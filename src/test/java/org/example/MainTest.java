@@ -47,7 +47,7 @@ class MainTest {
     }
 
     @Test
-    void validateDigits_shouldReturnTrue_WhenInputhasWithDigits() {
+    void validateDigits_shouldReturnTrue_WhenInputHasWithDigits() {
         // GIVEN
         String input = "abc1234%";
         // WHEN

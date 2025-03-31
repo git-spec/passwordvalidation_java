@@ -15,4 +15,14 @@ class MainTest {
         // THEN
         assertFalse(actual);
     }
+
+    @Test
+    void validateLength_shouldReturnFalse_WhenInputIsStringLength8() {
+        // GIVEN
+        String input = "abc1234%";
+        // WHEN
+        boolean actual = Main.validateLength(input);
+        // THEN
+        assertTrue(actual);
+    }
 }

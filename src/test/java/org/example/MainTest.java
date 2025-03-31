@@ -55,4 +55,14 @@ class MainTest {
         // THEN
         assertTrue(actual);
     }
+
+    @Test
+    void validateCapitals_shouldReturnTrue_WhenInputStartsWithCapitals() {
+        // GIVEN
+        String input = "ABc1234%";
+        // WHEN
+        boolean actual = Main.validateCapitals(input);
+        // THEN
+        assertTrue(actual);
+    }
 }

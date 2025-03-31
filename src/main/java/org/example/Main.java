@@ -1,12 +1,20 @@
 package org.example;
 
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Main {
     static String[] usuals = {"1234qwer", "12345678", "password", "password1", "qwerty123", "1q2w3e4r"};
+    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println(Main.validatePassword("Hello2World!"));
+        System.out.println("Enter a password: ");
+        String password = scanner.nextLine();
+        if (Main.validatePassword(password)) {
+            System.out.println("This is a strong password!");
+        } else {
+            System.out.println("This is a week password!");
+        }
     }
 
     /**

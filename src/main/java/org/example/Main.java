@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Hello, World!");
     }
 
-    public boolean validateLength(String input) {
+    public static boolean validateLength(String input) {
         return false;
     }
 }

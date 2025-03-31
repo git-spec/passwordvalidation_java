@@ -84,7 +84,7 @@ class MainTest {
         // GIVEN
         String usual = "Password123";
         // WHEN
-        boolean actual = Main.validateSpecialChar(usual);
+        boolean actual = Main.validateSpecialChars(usual);
         // THEN
         assertTrue(actual);
     }

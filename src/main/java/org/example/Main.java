@@ -31,4 +31,8 @@ public class Main {
         }
         return isOriginal;
     }
+
+    public static boolean validateSpecialChars(String input) {
+        return input.matches("[A-Za-z0-9]*");
+    }
 }

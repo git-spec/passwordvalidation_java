@@ -27,9 +27,9 @@ class MainTest {
     }
 
     @Test
-    void validateDigits_shouldReturnTrue_WhenInputStartsWithDigit() {
+    void validateDigits_shouldReturnTrue_WhenInputStartsWithDigits() {
         // GIVEN
-        String input = "1abc234%";
+        String input = "12abc34%";
         // WHEN
         boolean actual = Main.validateDigits(input);
         // THEN

@@ -8,4 +8,8 @@ public class Main {
     public static boolean validateLength(String input) {
         return input.length() >= 8;
     }
+
+    public static boolean validateDigits(String input) {
+        return input.matches(".*\\d.*");
+    }
 }

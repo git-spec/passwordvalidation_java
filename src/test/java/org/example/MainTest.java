@@ -35,4 +35,14 @@ class MainTest {
         // THEN
         assertTrue(actual);
     }
+
+    @Test
+    void validateDigits_shouldReturnTrue_WhenInputEndsWithDigit() {
+        // GIVEN
+        String input = "abc123%4";
+        // WHEN
+        boolean actual = Main.validateDigits(input);
+        // THEN
+        assertTrue(actual);
+    }
 }

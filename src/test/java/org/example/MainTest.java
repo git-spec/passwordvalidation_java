@@ -65,4 +65,17 @@ class MainTest {
         // THEN
         assertTrue(actual);
     }
+
+    @Test
+    void validateOriginality_shouldReturnFalse_WhenInputIsUsual() {
+        // GIVEN
+        String[] usuals = Main.usuals;
+        // WHEN
+        boolean actual = true;
+        for (String usual : usuals) {
+            actual = !Main.validateOriginality(usual);
+        }
+        // THEN
+        assertFalse(actual);
+    }
 }

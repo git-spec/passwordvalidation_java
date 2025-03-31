@@ -6,6 +6,6 @@ public class Main {
     }
 
     public static boolean validateLength(String input) {
-        return false;
+        return input.length() >= 8;
     }
 }

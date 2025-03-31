@@ -25,4 +25,14 @@ class MainTest {
         // THEN
         assertTrue(actual);
     }
+
+    @Test
+    void validateDigits_shouldReturnTrue_WhenInputStartsWithDigit() {
+        // GIVEN
+        String input = "1abc234%";
+        // WHEN
+        boolean actual = Main.validateDigits(input);
+        // THEN
+        assertTrue(actual);
+    }
 }
